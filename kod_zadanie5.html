@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <br>
+
+        <p>kod dotyczący zadania 5</p>
+
+        <p>plik html o nazwie index_zebrowski</p>
+        <textarea style="height: 1000; width: 75%"> 
+            <!DOCTYPE HTML> 
+            <html lang='pl'> 
+                <head>
+                    <meta charset='utf-8'>
+                    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+                    <title>Strona RWD</title>
+                    <link rel='stylesheet' href="css/style_zebrowski.css">
+                </head>
+                <body>
+                    <div class='container'><!--header --> 
+                        <header>
+                            <img src="images/gdansk3.jpg" alt=""/>
+                        </header><!--sidebar --> 
+                        <aside>
+                            <nav>
+                                <ul>
+                                    <li><a href="index_nowak.html">Start</a></li>
+                                    <li><a href="#">O RWD</a></li>
+                                    <li><a href="#">CSS a RWD</a></li>
+                                    <li><a href="#">Realizacja RWD</a></li>
+                                    <li><a href="kod_css_zebrowski.html">KOD pliku CSS  z wytłumaczeniami</a></li>
+                                </ul>
+                            </nav>
+                        </aside>    <!-- main -->
+                            <section id="main">
+                                <h1>RWD (ang. responsive web design) STRONY RENSPONSYWNE</h1>
+                                <p><u>Responsive Web Design (RWD)</u> 
+                                to nic innego, jak projekt strony internetowej, której układ automatycznie dostosowuje się do wielkości ekranu urządzenia. 
+                                Wyświetlane na ekranie treści skalują się tak, aby były one wygodne w odbiorze dla użytkownika. 
+                                Strony responsywne cechuje uniwersalność, czego dowodem jest ich wygląd na smartfonie czy tablecie.
+                                Urządzenia mobilne sprawiły, że przeglądaniestron internetowych nie jest już domeną komputerów stacjonarnych czy laptopów.
+                                Całodobowa obecność w sieci sprawiła, że konsumenci dokonują zakupów przez urządzenia mobilne, więc warto nie zostać w tyle i zmienić swoją stronę na RWD.
+                                </p> 
+                            </section> <!--footer-->
+                            <footer>
+                                <p>RWD_ZSE.pl © 2020</p>
+                            </footer>
+                    </div>
+                </body>
+            </html>
+        </textarea>
+
+        <br><br><br><br>
+
+        <p>plik css</p>
+        <textarea style="height:2500; width:50%">
+            * {
+                padding:0;
+                margin:0;
+            }
+            
+            html {
+                width:100%;
+                height:100%;
+            }
+            
+            body {font-family:Arial, Helvetica, Sans-serif;
+                font-size:14px;
+                line-height:1.5;
+                font-weight:400;
+                color:#434343;background:#FFF;
+            }
+            
+            .container {
+                margin:0 auto;
+            }
+            
+            header {
+                margin:25px 0;
+            }
+            
+            header img {
+                width:100%;
+            }
+            
+            aside {
+                float:left;
+                margin:0 0 25px;
+            }
+            
+            aside nav ul {
+                list-style:none;
+            } 
+            
+            aside nav ul li{
+                margin-bottom:1px;
+            }
+            
+            aside nav ul li a {
+                display:block;
+                text-decoration:none;
+                color:#000;
+                background:#FFC000;
+                padding:8px 20px;
+            }
+            
+            aside nav ul li a:hover{
+                background:#212121;
+                color:#FFF;
+            }
+            
+            #main {
+                float:right;
+                margin:0 0 25px;
+            }
+            
+            footer {
+                clear:both;
+                color:#FFF;
+                background:#121212;
+                padding:15px 0 15px 30px;
+                margin:0 0 25px;
+            }
+            
+            @media (min-width: 1100px) {
+                .container {
+                    width:1050px;
+                }
+            
+                aside {
+                    width:30%;
+                }
+            
+                #main {
+                    width:65%;
+                }
+            
+                textarea {
+                    width:100%;
+                }
+            }
+            
+            @media (max-width: 1100px) and (min-width: 1000px) {
+                
+                .container {
+                    width:950px;
+                }
+            
+                aside {
+                    width:30%;
+                }
+            
+                #main {
+                    width:65%;
+                }
+            
+                textarea {
+                    width:100%;
+                }
+            }
+            
+            @media (max-width: 1000px) and (min-width: 800px) {
+                
+                .container {
+                    width:750px;
+                }
+            
+                aside {
+                    width:30%;
+                }
+            
+                #main {
+                    width:65%;
+                }
+            
+                textarea {
+                    width:100%;
+                }
+            }
+                
+            @media (max-width: 800px) and (min-width: 500px) {
+                .container {
+                    width:450px;
+                }
+            
+                aside,#main {
+                    width:100%;
+                }
+                
+                textarea {
+                width:100%;
+                }
+            }
+            
+            @media (max-width: 500px) 
+            {        
+                .container {
+                    width:90%;
+                }
+            
+                aside,#main {
+                    width:100%;
+                }
+                
+                    textarea {
+                    width:100%;
+                }
+            }
+            
+        </textarea>
+    </body>
+</html>
