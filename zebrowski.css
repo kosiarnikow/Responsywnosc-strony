@@ -1,9 +1,0 @@
-div { 
-    background-color: red;
-}
-
-@media projection, screen, tty, tv { 
-    div {
-        background-color: green; 
-    }
-}
